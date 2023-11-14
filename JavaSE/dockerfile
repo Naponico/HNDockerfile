@@ -1,0 +1,5 @@
+FROM eclipse-temurin:17-jdk-jammy
+COPY src ./src
+WORKDIR /src
+RUN  javac  testing/Main.java
+CMD java testing/Main
